@@ -110,7 +110,7 @@ export default function Home() {
         "time":isoDateTime ,
         "rollNo":rollNo ,
         "score":score,
-        "filePath":"AptitudeTest.xlsx"
+        "filePath":"CodeKing.xlsx"
       };
       
       const b=JSON.stringify(formData)
@@ -143,7 +143,7 @@ export default function Home() {
           <div>
             <nav class="bg-gray-800 py-4 p-4">
               <div class="container mx-auto flex justify-between items-center">
-                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Aptitude Test</a>
+                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Code King</a>
               </div>
             </nav>
             <div role="status" className="h-screen flex justify-center items-center">
@@ -160,7 +160,7 @@ export default function Home() {
           <div>
             <nav class="bg-gray-800 py-4 p-4">
               <div class="container mx-auto flex justify-between items-center">
-                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Aptitude Test</a>
+                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Code King</a>
                 
               </div>
             </nav>
@@ -197,7 +197,7 @@ export default function Home() {
           <div>
             <nav class="bg-gray-800 py-4 p-4">
               <div class="container mx-auto flex justify-between items-center">
-                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Aptitude Test</a>
+                <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Code King</a>
               </div>
             </nav>
             <div className="flex bg-gray-200 p-8 justify-center items-center h-screen">
@@ -229,7 +229,7 @@ export default function Home() {
           <div>
             <nav class="bg-gray-800 py-4 p-4">
         <div class="container mx-auto flex justify-between items-center">
-          <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Aptitude Test</a>
+          <a href="#" class="text-white font-bold text-2xl">AVINYA 2K24: Code King</a>
           <div className="inline-flex text-white font-bold bg-gray-600 p-2 rounded-md divide-x">
             <h3 className="p-2">{rollNo}</h3>
             
