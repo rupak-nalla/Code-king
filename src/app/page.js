@@ -3,6 +3,11 @@ import CountdownTimer from "../app/components/countdown"
 import questions from "../app/data/questions"
 import Image from 'next/image';
 import myImage from '../app/data/logo.jpg';
+import Img1 from '../app/data/1.png';
+import Img2 from '../app/data/2.png';
+import Img3 from '../app/data/3.png';
+import Img4 from '../app/data/4.png';
+import Img5 from '../app/data/5.png';
 
 import { useState } from 'react';
 
@@ -138,6 +143,25 @@ export default function Home() {
     e.preventDefault();
     setExamState(false);
   }
+  const imgs=[
+    {
+      var:Img1
+    },
+    {
+      var:Img2
+    },
+    {
+      var:Img3
+    },
+    {
+      var:Img4
+    },
+    {
+      var:Img5
+    }
+
+
+  ]
   return (
     <main>
       {
@@ -251,6 +275,13 @@ export default function Home() {
                   <div class="h-[90%] bg-gray-200 p-8">
                     <h2 class="text-2xl font-bold mb-4">Question</h2>
                     <h4 class=" mb-4">{qs[i].Question}</h4>
+                    <Image
+                        src={imgs[i-1].var}
+                        alt="My Image"
+                        class=" mb-3  shadow-lg"
+                        height={200}
+                        width={600}
+                    />
                     <div class="flex flex-col space-y-4">
                       {/* options */}
                       {Object.keys(qs[i].Options).map((optionKey) => (
