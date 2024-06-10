@@ -8,6 +8,8 @@ import Img2 from '../app/data/2.png';
 import Img3 from '../app/data/3.png';
 import Img4 from '../app/data/4.png';
 import Img5 from '../app/data/5.png';
+import Img6 from '../app/data/6.png';
+
 
 import { useState } from 'react';
 
@@ -158,6 +160,9 @@ export default function Home() {
     },
     {
       var:Img5
+    },
+    {
+      var:Img6
     }
 
 
@@ -233,6 +238,7 @@ export default function Home() {
               
               <div class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <div className="flex justify-center p-3">
+                    
                     <Image
                         src={myImage}
                         alt="My Image"
@@ -275,13 +281,20 @@ export default function Home() {
                   <div class="h-[90%] bg-gray-200 p-8">
                     <h2 class="text-2xl font-bold mb-4">Question</h2>
                     <h4 class=" mb-4">{qs[i].Question}</h4>
-                    <Image
+                    { 
+                      imgs[i-1]?(
+                        <Image 
                         src={imgs[i-1].var}
                         alt="My Image"
                         class=" mb-3  shadow-lg"
                         height={200}
                         width={600}
-                    />
+                        />
+                      ):(
+                        <div></div>
+                      )
+                    }
+                    
                     <div class="flex flex-col space-y-4">
                       {/* options */}
                       {Object.keys(qs[i].Options).map((optionKey) => (
